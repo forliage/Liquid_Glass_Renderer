@@ -106,8 +106,8 @@ For each glass control region $G$, define its 2D shape function $s(\mathbf{x})$ 
 $$
 d(\mathbf{x})=
 \begin{cases}
--\operatorname{dist}(\mathbf{x},\partial G), & \mathbf{x}\in G,\\
-\operatorname{dist}(\mathbf{x},\partial G), & \mathbf{x}\notin G.
+-\text{dist}(\mathbf{x},\partial G), & \mathbf{x}\in G,\\
+\text{dist}(\mathbf{x},\partial G), & \mathbf{x}\notin G.
 \end{cases}
 $$
 
@@ -131,7 +131,7 @@ $$
 r(\mathbf{x})=
 \frac{\rho(\mathbf{x})}{R(\mathbf{x})},
 \qquad
-\rho(\mathbf{x})=\operatorname{dist}(\mathbf{x},\mathcal{S}_G),
+\rho(\mathbf{x})=\text{dist}(\mathbf{x},\mathcal{S}_G),
 $$
 
 where $\mathcal{S}_G$ is the control skeleton.
@@ -187,7 +187,7 @@ where $\psi$ can be taken as
 $$
 \psi(d)=\exp\left(-\frac{d^2}{2\sigma_d^2}\right)
 \quad \text{or} \quad
-\psi(d)=\operatorname{smoothstep}(a,b,-d).
+\psi(d)=\text{smoothstep}(a,b,-d).
 $$
 
 ### 3.3.Normal Field
@@ -396,7 +396,7 @@ Define the highlight weight
 
 $$
 s(\mathbf{x},t)=
-\operatorname{smoothstep}\left(
+\text{smoothstep}\left(
 a_s,b_s,
 q(\mathbf{x},t)
 \right),
@@ -617,7 +617,7 @@ $$
 satisfy
 
 $$
-\operatorname{Re}(\lambda_i)>0.
+\text{Re}(\lambda_i)>0.
 $$
 
 Therefore, $J_F$ is nonsingular.
